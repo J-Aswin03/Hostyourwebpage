@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EXAM HALL MANAGEMENT SYSTEM</title>
+    <style>
+        html,body{
+            margin:0;
+            padding:0;
+        }
+        .buttons {
+            
+            background: linear-gradient(to bottom, #548efa 0%, rgba(0, 0, 0, 0.5) 100%) ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            font-family: Arial, sans-serif;
+            margin:0;
+        }
+        
+        
+         .headder{
+           
+
+          margin:0px;
+          color:white;
+          
+         padding:55px;
+          text-align:center;
+            
+            
+            background-color: rgb(14, 3, 163);
+         }
+        .button-container {
+           
+            text-align: center;
+        }
+        .button-container{
+            border-style:solid;
+            border-radius: 12px;
+            background: linear-gradient(to bottom, rgb(16, 117, 126) 0%, silver 100%);
+        }
+
+        .button-container button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #2eb996;
+            border: none;
+            cursor: pointer;
+          color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .button-container button:hover {
+            transform: scale(1.05);
+        }
+
+        .button-blue {
+            background-color: #0080ff;
+        }
+
+        .button-green {
+            background-color: #00cc66;
+        }
+
+        .button-yellow {
+            background-color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="headder">EXAM HALL MANAGEMENT SYSTEM</h1>
+  
+    <div class="buttons">
+      <!--<img src="exam.jpg" alt="image">--> 
+    <div class="button-container">
+        
+           <h1>
+             <div>
+     <form method="POST" action="adminlogin.php">
+           <pre> <button type="submit" class="button-blue">     ADMIN LOGIN     </button></pre>
+          </form>
+    </div>
+       <div>
+          <form method="POST" action="student.php">
+            <pre><button type="submit" class="button-green">    STUDENT LOGIN  </button></pre>
+          </form>
+    </div>
+    <div>
+          <form method="POST" action="teacher.php">
+           <pre><button type="submit" class="button-yellow">    TEACHER LOGIN  </button></pre>
+          </form>
+    </div>
+    </h1>
+    
+        
+    </div>
+    </div>
+</body>
+</html>
